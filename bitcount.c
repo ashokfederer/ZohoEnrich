@@ -4,11 +4,11 @@ int main(void) {
 	// your code goes here
 	int n,res=0;
 	scanf("%d",&n);
-	while(n!=0)
+	do
 	{
 		n=n/2;
 		res++;
-	}
+	}while(n!=0);
 	printf("\nNumber of bits : %d",res);
 	
 	
