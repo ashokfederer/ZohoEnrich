@@ -1,18 +1,12 @@
 #include <stdio.h>
+#include <math.h>
 
-int main(void) {
-	// your code goes here
-	int n,res=0;
-	scanf("%d",&n);
-	do
-	{
-		n=n/2;
-		res++;
-	}while(n!=0);
-	printf("\nNumber of bits : %d",res);
-	
-	
-	
-	
-	return 0;
+int main ()
+{
+   int n,res=1;
+   scanf("%d",&n);
+   if(n!=0)
+   		res=log2(n)+1;
+   printf("Bitcount : %d",res);
+   return 0;
 }
