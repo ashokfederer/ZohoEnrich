@@ -20,7 +20,7 @@ int main(void) {
 				}
 				len=0;
 				stop=i;
-                break;
+                		break;
 			}
 			j++;
 		}
