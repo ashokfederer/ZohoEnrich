@@ -31,7 +31,7 @@ int main(void) {
 		case 8:
 			printf("Eight Hundred and ");	
 			break;
-		default :
+		case 9:
 			printf("Nine Hundred and ");	
 			
 	}
@@ -104,6 +104,9 @@ int main(void) {
 		}
 		switch(n3)
 		{
+			case 0:
+				printf("Zero");
+				break;
 			case 1:
 				printf(" One");
 				break;
