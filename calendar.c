@@ -37,11 +37,14 @@ void prevn(int n)
             {
                 nmonth--;
             }
+            
             tempdays=days[nmonth-1];
+            
             if(leap(nyear)==1&&nmonth==2)
             {
                 tempdays++;
             }
+           
             prevn(n);
         }
 
@@ -142,11 +145,14 @@ int diff(char* date1, char*date2)
         else
         {
             n=n+day2;
+            
             n=n+days[month1-1]-day1;
+            
             if((leap(year1)==1)&&(month1==2))
             {
                     n++;
             }
+            
             month2--;
             while(month1<month2)
             {
@@ -157,6 +163,7 @@ int diff(char* date1, char*date2)
                 }
                 month2--;
             }
+            
             return n;
         }
     }
@@ -173,6 +180,7 @@ int diff(char* date1, char*date2)
             }
             month1++;
         }
+        
         n=n+day2;
         month2--;
         while(month2>=1)
@@ -184,8 +192,10 @@ int diff(char* date1, char*date2)
             }
             month2--;
         }
+        
         temp=year2-year1-1;
         add=temp*365;
+        
         for(i=year1+1;i<year2;i++)
         {
             if(leap(i)==1)
@@ -194,6 +204,7 @@ int diff(char* date1, char*date2)
             }
         }
         n=n+add;
+        
         return n;
     }
 }
